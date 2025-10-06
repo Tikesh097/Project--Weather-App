@@ -1,54 +1,143 @@
-# React + TypeScript + Vite
+# Climate Weather App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![React](https://img.shields.io/badge/React-18.x-61DAFB?logo=react&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?logo=typescript&logoColor=white)
+![TanStack Query](https://img.shields.io/badge/TanStack_Query-5.x-FF4154?logo=reactquery&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.x-38B2AC?logo=tailwind-css&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-5.x-646CFF?logo=vite&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green.svg)
 
-Currently, two official plugins are available:
+**Climate** is a full-featured weather forecast application built using **ReactJS**, **TypeScript**, **ShadCN UI**, and **TanStack Query**. It allows users to view current and forecasted weather for their location or any city worldwide, with a modern and responsive interface and advanced features like search history and favorites.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- 🌍 **Current Location Weather:** View weather data for your current location with geolocation detection.
+- 🔍 **Global Weather Search:** Search for weather in any city worldwide using OpenWeather API and city geocoding.
+- 📊 **24-Hour Temperature Chart:** Graphical display of temperature changes for the next 24 hours using Recharts.
+- 📅 **5-Day Forecast:** Extended weather data including humidity, wind speed, sunrise/sunset time, and pressure.
+- ⭐ **Search History & Favorites:** Save searched cities for quick future access and mark favorite locations using TanStack Query mutations.
+- 🌓 **Light/Dark Mode:** Toggle between light and dark themes with state persistence and smooth transitions.
+- 📱 **Responsive UI:** Fully adapts to mobile, tablet, and desktop devices, styled with ShadCN UI and Tailwind CSS.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+
+---
+
+## 🛠️ Technologies Used
+
+- **ReactJS** (with TypeScript)
+- **ShadCN UI** (component library based on Tailwind CSS)
+- **TanStack Query** (state management and caching)
+- **OpenWeatherMap API** (weather and geolocation data)
+- **Recharts** (graphical representation of temperature trends)
+- **Vite** (fast build tool and dev server)
+
+
+---
+
+## 📦 Installation
+
+1. **Clone the repository:**
+```bash
+git clone https://github.com/Tikesh097/Project--Weather-App
+cd Project--Weather-App
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+2. **Install dependencies:**
+```bash
+npm install
 ```
+
+3. **Set up environment variables:**
+   - Create a `.env` file in the project root.
+   - Add your OpenWeatherMap API key:
+```bash
+VITE_OPEN_WEATHER_API_KEY=your_api_key_here
+```
+
+4. **Start the development server:**
+```bash
+npm run dev
+```
+
+5. **Access the app:**
+   - Open `http://localhost:5173` in your browser.
+
+---
+
+## 🚀 Usage
+
+- ✅ Allow location access to view local weather.
+- 🔎 Use the search bar to find weather information for cities worldwide.
+- ⭐ Add cities to your favorites for quick access.
+- 🌓 Switch between light and dark modes using the theme toggle.
+- 📊 View interactive temperature charts for hourly and daily forecasts.
+- 🌐 Deploy to production to share your app (see Deployment section).
+
+---
+
+## 🌐 Deployment
+
+1. **Build the app for production:**
+```bash
+npm run build
+```
+
+2. **Upload the contents of the `dist` folder** to your web hosting provider.
+
+---
+
+## 📁 Folder Structure
+
+```
+/src
+  /components - Reusable UI components (Header, Footer, Weather Cards, etc.)
+  /hooks      - Custom React hooks (geolocation, weather API, etc.)
+  /pages      - Main application pages (Weather Dashboard, City Weather)
+  /types      - TypeScript interfaces and types
+  /api        - API configuration and endpoint wrappers
+```
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Open issues or submit pull requests for new features, bug fixes, or documentation improvements.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License - feel free to use it for personal or commercial purposes. Attribution is appreciated.
+
+---
+
+## 🙏 Credits
+
+Developed following best practices and inspired by modern React, TypeScript, and UI patterns. Special thanks to [Roadside Coder] for guidance and inspiration.
+
+---
+
+## 📸 Screenshots
+
+![Climate Weather App Dashboard](https://github.com/Tikesh097/Project--Weather-App/blob/main/public/Screenshot1.png)
+
+
+---
+
+## 🔗 Links
+
+- **Live Demo:** [Your deployed app URL]
+- **API Documentation:** [OpenWeatherMap API](https://openweathermap.org/api)
+- **ShadCN UI:** [https://ui.shadcn.com](https://ui.shadcn.com)
+
+---
+
+**Made with ❤️ and TypeScript**
