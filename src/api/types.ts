@@ -52,6 +52,7 @@ export interface ForecastData {
 
 
 export interface GeocodingResponse {
+    searchedAt: string | number | Date;
     name: string;
     local_names?: Record<string, string>;
     lat: number;
