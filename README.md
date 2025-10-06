@@ -134,7 +134,7 @@ Developed following best practices and inspired by modern React, TypeScript, and
 
 ## 🔗 Links
 
-- **Live Demo:** [Your deployed app URL]
+- **Deployment Link :** https://project-weather-app-blond.vercel.app/ 
 - **API Documentation:** [OpenWeatherMap API](https://openweathermap.org/api)
 - **ShadCN UI:** [https://ui.shadcn.com](https://ui.shadcn.com)
 
