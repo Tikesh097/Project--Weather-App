@@ -1,4 +1,4 @@
-# Climate Weather App
+# Tapmaan Weather App
 
 ![React](https://img.shields.io/badge/React-18.x-61DAFB?logo=react&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?logo=typescript&logoColor=white)
@@ -7,7 +7,7 @@
 ![Vite](https://img.shields.io/badge/Vite-5.x-646CFF?logo=vite&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
 
-**Climate** is a full-featured weather forecast application built using **ReactJS**, **TypeScript**, **ShadCN UI**, and **TanStack Query**. It allows users to view current and forecasted weather for their location or any city worldwide, with a modern and responsive interface and advanced features like search history and favorites.
+**Tapmaan** is a full-featured weather forecast application built using **ReactJS**, **TypeScript**, **ShadCN UI**, and **TanStack Query**. It allows users to view current and forecasted weather for their location or any city worldwide, with a modern and responsive interface and advanced features like search history and favorites.
 
 ---
 
